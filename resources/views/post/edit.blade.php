@@ -80,7 +80,7 @@
                     <label for="category">Category</label>
                     <select name="category_id" id="category">
                         @foreach($categories as $cat)
-                            <option {{$cat->id === $post->category->id ? 'selected' : ''}}
+                            <option {{$post->category != null && $cat->id === $post->category->id ? 'selected' : ''}}
                                    value="{{$cat->id}}">{{$cat->title}}</option>
                         @endforeach
                     </select>

@@ -20,7 +20,7 @@
             background-color: red;
         }
         .title {
-            color: 0a58ca;
+            color: #0a58ca;
             font-size: 22px;
             margin-top: 20px;
         }
@@ -37,7 +37,7 @@
             <div>{{$post->image}}</div>
             @if($category)
                 <h2 class="title">Category</h2>
-                <div>{{$category->title}}</div>
+                <div><a href="{{route('category.show',$category->id)}}">{{$category->title}}</a></div>
             @endif
             @if($tags)
                 <h2 class="title">Tags</h2>

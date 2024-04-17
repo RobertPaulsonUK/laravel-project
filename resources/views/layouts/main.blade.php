@@ -25,6 +25,9 @@
                 <li>
                     <a class="text-xl text-cyan-50" href="{{route('contacts.index')}}">Contacts</a>
                 </li>
+                <li>
+                    <a class="text-xl text-cyan-50" href="{{route('category.index')}}">Categories</a>
+                </li>
             </ul>
         </nav>
         </div>
